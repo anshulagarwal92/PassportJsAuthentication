@@ -1,0 +1,58 @@
+<div class="container login-form content-body">
+    <div class="panel-body">
+        <% extend('../layout') %>
+        <div class="flash-message">
+            <% if(typeof locals.messages !== "undefined" && Object.keys(locals.messages).length > 0) { %>
+                <% for (var type in locals.messages) { %>
+                    <% if (locals.messages.hasOwnProperty(type)) { %>
+                        <p class="<%= 'bg-'+type %>"><%= locals.messages[type] %></p>
+                    <% } %>
+                <% } %>
+            <% } %>
+        </div>
+        <form method="post" action="/login">
+            <div class="imgcontainer">
+                <img src="http://www.ranosys.com/themes/ranosys_website/img/logo.png" alt="ranosys">
+            </div>
+            <div class="form-body">
+                <div>
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+
+                    <button type="submit">Login</button>
+                </div>
+                <hr>
+                <div class="login-social-link centered or-part">
+
+                    <span>or</span>
+                    <p>you can sign up via your social network</p>
+                    <a class="btn btn-danger btn-social-width" href="/login/auth/google">
+                        <span class="fa-stack fa-lg social-icons">
+                          <!-- <i class="fa fa-square-o fa-stack-2x"></i> -->
+                          <i class="fa fa-google-plus"></i>
+                        </span>
+                        Login with Google
+                    </a>
+                    <a class="btn btn-facebook btn-social-width" href="/login/auth/facebook">
+                        <span class="fa-stack fa-lg social-icons">
+                          <!-- <i class="fa fa-square-o fa-stack-2x"></i> -->
+                          <i class="fa fa-facebook"></i>
+                        </span>
+                        Login with Facebook
+                    </a>
+                    <a class="btn btn-linkedin btn-social-width" href="/login/auth/linkedin">
+                        <span class="fa-stack fa-lg social-icons">
+                          <!-- <i class="fa fa-square-o fa-stack-2x"></i> -->
+                          <i class="fa fa-linkedin"></i>
+                        </span>
+                        Login with Linkedin
+                    </a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>

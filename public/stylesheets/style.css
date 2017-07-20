@@ -1,0 +1,216 @@
+body {
+  /*padding: 50px;*/
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+html {
+    height:100%;
+    min-height:100% !important;
+    margin:0;
+    padding:0;
+}
+body {
+    overflow:auto;
+    padding:0;
+    margin:0;
+    height:86vh;
+    min-height:86vh !important;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.form-body {
+    padding: 10px;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+
+footer {
+    background: #f8f8f8;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+}
+
+.btn-facebook {
+  color: #fff;
+  background-color: #5193ea;
+  border-color: #2775e2;
+}
+.btn-facebook:hover {
+  color: #fff;
+  border-color: #2775e2;
+  background-color: #2775e2;
+}
+.btn-facebook:focus {
+  color: #fff;
+  border-color: #2775e2;
+  background-color: #2775e2;
+}
+.btn-facebook:active {
+  color: #fff;
+  border-color: #2775e2;
+  background-color: #2775e2;
+}
+.btn-facebook.active {
+  color: #fff;
+  border-color: #2775e2;
+  background-color: #2775e2;
+}
+.open .dropdown-toggle.btn-facebook {
+  color: #fff;
+  border-color: #2775e2;
+  background-color: #2775e2;
+}
+
+/*linkedin button*/
+
+.btn-linkedin {
+  color: #fff;
+  background-color: #0084bf;
+  border-color: #0084bf;
+}
+.btn-linkedin:hover {
+  color: #fff;
+  border-color: #0084bf;
+  background-color: #0084bf;
+}
+.btn-linkedin:focus {
+  color: #fff;
+  border-color: #0084bf;
+  background-color: #0084bf;
+}
+.btn-linkedin:active {
+  color: #fff;
+  border-color: #0084bf;
+  background-color: #0084bf;
+}
+.btn-linkedin.active {
+  color: #fff;
+  border-color: #0084bf;
+  background-color: #0084bf;
+}
+
+.btn-social-width {
+    width: 100%;
+    position: relative;
+}
+
+.btn-social-width .social-icons {
+    left: 18%;
+    background: transparent;
+    top: 0;
+}
+
+.login-social-link {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 15px;
+    position: relative;
+}
+
+.centered {
+	text-align: center;
+}
+
+.or-part span {
+    background-color: #fff;
+    display: inline-block;
+    left: 50%;
+    margin-left: -10px;
+    padding: 0 5px;
+    position: absolute;
+    top: -32px;
+}
+
+.login-social-link a {
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .content-body {
+        width: 500px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .content-body {
+        width: 500px;
+    }
+}

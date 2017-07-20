@@ -1,0 +1,35 @@
+<div class="container login-form content-body">
+    <div class="panel-body">
+        <% extend('../layout') %>
+        <div class="flash-message">
+            <% if(typeof locals.messages !== "undefined" && Object.keys(locals.messages).length > 0) { %>
+                <% for (var type in locals.messages) { %>
+                    <% if (locals.messages.hasOwnProperty(type)) { %>
+                        <p class="<%= 'bg-'+type %>"><%= locals.messages[type] %></p>
+                    <% } %>
+                <% } %>
+            <% } %>
+        </div>
+        <form method="post" action="/signup">
+            <div class="imgcontainer">
+                <img src="http://www.ranosys.com/themes/ranosys_website/img/logo.png" alt="ranosys">
+            </div>
+            <div class="form-body">
+                <label><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+
+                <label><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+
+                <label><b>Confirm Password</b></label>
+                <input type="password" placeholder="Enter Confirm Password" name="confirm_password" required>
+
+                <button type="submit">Sign up</button>
+            </div>
+        </form>
+
+    </div>
+</div>
