@@ -214,3 +214,51 @@ footer {
         width: 500px;
     }
 }
+
+.photos li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 20%;
+    cursor: pointer;
+}
+.photos li img {
+    width: 100px;
+    height: 100px;
+}
+
+.modal-dialog {
+    overflow-y: initial !important;
+}
+
+.modal-body {
+    height: 436px;
+    overflow-y: auto;
+}
+
+.modal .close {
+    display: inline;
+    float: right;
+    width: 10%;
+}
+
+.modal-header {
+    background: #f8f8f8;
+}
+
+.pop-up-buttons {
+    display: inline-block;
+    width: auto;
+    float: right;
+    margin-right: 10px;
+}
+
+.photos li .selected-icon{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  width: 40px;
+  height: 40px;
+}
